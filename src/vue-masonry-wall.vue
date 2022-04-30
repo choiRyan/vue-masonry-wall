@@ -185,7 +185,7 @@
        * @private internal component use
        */
       _columnSize() {
-        const length = Math.round(this.$refs.wall.scrollWidth / this._options.width)
+        const length = Math.floor(this.$refs.wall.scrollWidth / this._options.width)
         if (length < 1) return 1
         return length
       },
